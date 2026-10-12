@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ClosetVitual"
+rootProject.name = "ClosetVirtual"
 include(":app")
  
