@@ -1,0 +1,21 @@
+# Android / Gradle
+.gradle/
+build/
+ClosetVirtual/build/
+ClosetVirtual/app/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Release artifacts (se publican via GitHub Releases, no en git)
+*.apk
+*.aab
