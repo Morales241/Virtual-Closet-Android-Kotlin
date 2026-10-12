@@ -31,8 +31,10 @@ En Android Studio: Sync Gradle, elegir dispositivo o emulador, Run.
 
 ## Estado
 
-Funciona en dispositivo. Pendiente: subir screenshots a `docs/screenshots/` y publicar Release v1.0 con APK.
+Funciona en dispositivo (probada en curso). Release v1.0 con APK pendiente de publicar.
 
-## Screenshots
+## Visual
 
-Ver `docs/screenshots/`. Pendiente de agregar capturas de inicio, ropero, outfits y calendario.
+Imagenes del proyecto (sin emulador, directo de recursos):
+
+<img src="ClosetVirtual/app/src/main/res/drawable/splashscreen.png" width="220" alt="Splash" /> <img src="ClosetVirtual/app/src/main/res/drawable/imageniniciosesion.png" width="220" alt="Inicio de sesion" /> <img src="ClosetVirtual/app/src/main/res/drawable/ropero.jpeg" width="220" alt="Ropero" />
