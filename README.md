@@ -13,6 +13,20 @@ App para gestionar tu vestuario: registra prendas con foto, arma outfits y visua
 - Datos en Firebase (auth + base de datos), imagenes via Cloudinary con carga Glide.
 - `minSdk 24`, `targetSdk 35`, ViewBinding activado.
 
+## Base de datos (NoSQL)
+
+Firebase Firestore: base documental, sin tablas ni joins. Un documento por usuario con 3 subcolecciones. Los conteos (usos totales, ultimos 30 dias) se calculan en la app recorriendo `outfitsUsados`.
+
+```mermaid
+flowchart TB
+    U[Usuarios/{uid}\nnombre, email] --> P[(prendas\nid, nombre, tipo, tags[], imagenUrl, Color)]
+    U --> R[(outfitsRegistrados\nnombre plantilla, prendas por categoria)]
+    U --> S[(outfitsUsados\nfecha Timestamp, prendas por categoria)]
+    S --> C[Calendario\nfiltra por fecha]
+    S --> D[Detalle prenda\nusos totales + ultimos 30 dias]
+    P -->|foto| CL[Cloudinary\nimagenUrl]
+```
+
 ## Como correrlo
 
 ```bash
@@ -23,15 +37,9 @@ git clone https://github.com/Morales241/ProyectoFinalAppsMoviles.git
 
 En Android Studio: Sync Gradle, elegir dispositivo o emulador, Run.
 
-## Que hice yo
-
-- Registro de prendas con foto, ropero por categorias, armado de outfits y calendario visual.
-- Login/registro con Firebase Auth y persistencia en Firestore/Realtime Database.
-- Correccion de nombre y tema (Vitual a Virtual) y limpieza de proyecto en rama `reestructuracion`.
-
 ## Estado
 
-Funciona en dispositivo (probada en curso). Release v1.0 con APK pendiente de publicar.
+APK funcional verificado en dispositivo. Release v1.0 en preparacion con el APK.
 
 ## Pantallas
 
