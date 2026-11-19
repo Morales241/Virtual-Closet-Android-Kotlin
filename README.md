@@ -30,7 +30,7 @@ flowchart TB
 ## Como correrlo
 
 ```bash
-git clone https://github.com/Morales241/ProyectoFinalAppsMoviles.git
+git clone https://github.com/Morales241/Virtual-Closet-Android-Kotlin.git
 # Abrir la carpeta ClosetVirtual en Android Studio
 # Agregar tu google-services.json en ClosetVirtual/app/ y sincronizar Gradle
 ```
@@ -39,7 +39,7 @@ En Android Studio: Sync Gradle, elegir dispositivo o emulador, Run.
 
 ## Estado
 
-APK funcional verificado en dispositivo. Release v1.0 en preparacion con el APK.
+APK funcional verificado en dispositivo.
 
 ## Pantallas
 
